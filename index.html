@@ -18,6 +18,17 @@
 </head>
 
 <body class="font-monospace">
+  <!-- SVG icons -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="box-arrow-up-right" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right"
+      viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+      <path fill-rule="evenodd"
+        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+    </symbol>
+  </svg>
+
   <header>
     <nav class="nav justify-content-around nav-pills border rounded-3 m-1 py-1 fs-5 shadow bg-body-secondary">
       <a href="#" class="nav-link active" aria-current="page">Apresentação</a>
@@ -38,10 +49,9 @@
           <p class="text-uppercase text-primary fs-5 fw-bold mb-0">Olá, sou o</p>
           <h1 class="display-4 fw-bold text-body-emphasis mb-3">Stéphano</h1>
           <p class="lead mb-0">
-            Desenvolvedor full-stack em início de carreira, com forte motivação para aprender continuamente, sólido
-            entendimento das bases de front-end e back-end e experiência prática em projetos pessoais e acadêmicos.
-            Comprometido com boas práticas de segurança e com o desenvolvimento de soluções eficientes, bem estruturadas
-            e orientadas à melhor experiência do usuário
+            Desenvolvedor full-stack em início de carreira, com sólido entendimento das bases de front-end e back-end,
+            além de experiência prática em projetos pessoais e acadêmicos. Comprometido com boas práticas de segurança e
+            com o desenvolvimento de soluções bem estruturadas e orientadas à melhor experiência do usuário.
           </p>
         </div>
       </div>
@@ -61,6 +71,10 @@
         <figure class="figure">
           <img class="figure-img img-fluid skill-logo" src="img/logo/bootstrap.svg" alt="Logo Bootstrap">
           <figcaption class="figure-caption text-break">Bootstrap</figcaption>
+        </figure>
+        <figure class="figure">
+          <img class="figure-img img-fluid skill-logo" src="img/logo/c.svg" alt="Logo C">
+          <figcaption class="figure-caption text-break">C</figcaption>
         </figure>
         <figure class="figure">
           <img class="figure-img img-fluid skill-logo" src="img/logo/cpp.svg" alt="Logo C++">
@@ -112,13 +126,29 @@
     <section class="container my-4 my-lg-5 text-center">
       <h2 class="mb-4 pb-2 border-bottom">Certificações</h2>
       <div class="d-flex flex-wrap justify-content-center align-items-center column-gap-5">
-        <figure class="figure">
+        <figure class="figure position-relative">
           <img class="figure-img img-fluid certification-logo" src="img/logo/ewpt.svg" alt="Logo eWPT">
-          <figcaption class="figure-caption text-break">eWPT</figcaption>
+          <figcaption class="text-break">
+            <a class="icon-link stretched-link" href="https://certs.ine.com/4dbe53ff-f8f5-4863-a15b-eb90a2bf3cf4"
+              target="_blank">
+              eWPT
+              <svg class="bi" aria-hidden="true">
+                <use href="#box-arrow-up-right"></use>
+              </svg>
+            </a>
+          </figcaption>
         </figure>
-        <figure class="figure">
-          <img class="figure-img img-fluid certification-logo" src="img/logo/toefl.svg" alt="Logo TOEFL">
-          <figcaption class="figure-caption text-break">TOEFL iBT</figcaption>
+        <figure class="figure position-relative">
+          <img class="figure-img img-fluid certification-logo" src="img/logo/usa.svg" alt="Bandeira EUA">
+          <figcaption class="text-break">
+            <a class="icon-link stretched-link"
+              href="https://drive.google.com/file/d/1wkWnnbX2s_E3BAUUZv6EEVoo4_nOEByQ/view" target="_blank">
+              TOEFL iBT
+              <svg class="bi" aria-hidden="true">
+                <use href="#box-arrow-up-right"></use>
+              </svg>
+            </a>
+          </figcaption>
         </figure>
       </div>
     </section>
