@@ -5,3 +5,13 @@
 .certification-logo {
   width: 128px;
 }
+
+.carousel-item>a {
+  cursor: zoom-in;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(0);
+  mix-blend-mode: difference;
+}

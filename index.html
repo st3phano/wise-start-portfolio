@@ -30,7 +30,7 @@
   </svg>
 
   <header>
-    <nav class="nav justify-content-around nav-pills border rounded-3 m-1 py-1 fs-5 shadow bg-body-secondary">
+    <nav class="nav justify-content-around nav-pills rounded-3 m-1 py-1 fs-5 shadow bg-body-secondary">
       <a href="#" class="nav-link active" aria-current="page">Apresentação</a>
       <a href="#" class="nav-link">Habilidades</a>
       <a href="#" class="nav-link">Certificações</a>
@@ -40,10 +40,10 @@
   </header>
 
   <main>
-    <section class="container my-4 my-lg-5 py-4 p-lg-5 border rounded-3 shadow-lg bg-body-tertiary">
+    <section class="container my-4 my-lg-5 py-4 p-lg-5 border rounded-4 shadow-lg bg-body-tertiary">
       <div class="row row-cols-1 row-cols-lg-2 flex-lg-row-reverse align-items-center">
         <div class="col text-center">
-          <img class="img-fluid rounded-circle shadow-lg" src="img/perfil.png" alt="Perfil">
+          <img class="img-fluid rounded-circle shadow-lg" src="img/perfil.webp" alt="Perfil">
         </div>
         <div class="col">
           <p class="text-uppercase text-primary fs-5 fw-bold mb-0">Olá, sou o</p>
@@ -59,7 +59,7 @@
 
     <section class="container my-4 my-lg-5 text-center">
       <h2 class="mb-4 pb-2 border-bottom">Habilidades</h2>
-      <div class="d-flex flex-wrap justify-content-center align-items-center column-gap-5">
+      <div class="hstack flex-wrap justify-content-center column-gap-5">
         <figure class="figure">
           <img class="figure-img img-fluid skill-logo" src="img/logo/apache.svg" alt="Logo Apache">
           <figcaption class="figure-caption text-break">Apache</figcaption>
@@ -125,12 +125,12 @@
 
     <section class="container my-4 my-lg-5 text-center">
       <h2 class="mb-4 pb-2 border-bottom">Certificações</h2>
-      <div class="d-flex flex-wrap justify-content-center align-items-center column-gap-5">
+      <div class="hstack flex-wrap justify-content-center column-gap-5">
         <figure class="figure position-relative">
           <img class="figure-img img-fluid certification-logo" src="img/logo/ewpt.svg" alt="Logo eWPT">
           <figcaption class="text-break">
             <a class="icon-link stretched-link" href="https://certs.ine.com/4dbe53ff-f8f5-4863-a15b-eb90a2bf3cf4"
-              target="_blank">
+              target="_blank" rel="noopener noreferrer">
               eWPT
               <svg class="bi" aria-hidden="true">
                 <use href="#box-arrow-up-right"></use>
@@ -142,7 +142,8 @@
           <img class="figure-img img-fluid certification-logo" src="img/logo/usa.svg" alt="Bandeira EUA">
           <figcaption class="text-break">
             <a class="icon-link stretched-link"
-              href="https://drive.google.com/file/d/1wkWnnbX2s_E3BAUUZv6EEVoo4_nOEByQ/view" target="_blank">
+              href="https://drive.google.com/file/d/1wkWnnbX2s_E3BAUUZv6EEVoo4_nOEByQ/view" target="_blank"
+              rel="noopener noreferrer">
               TOEFL iBT
               <svg class="bi" aria-hidden="true">
                 <use href="#box-arrow-up-right"></use>
@@ -150,6 +151,37 @@
             </a>
           </figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="container my-4 my-lg-5 text-center">
+      <h2 class="mb-4 pb-2 border-bottom">Projetos</h2>
+      <div id="carouselProjects" class="carousel slide mx-auto col-lg-10">
+        <div class="carousel-inner rounded-5 shadow-lg">
+          <div class="carousel-item active">
+            <a href="https://st3phano.github.io/wise-start-indecor/" target="_blank" rel="noopener noreferrer">
+              <img class="d-block w-100" src="img/screenshot/indecor.webp" alt="Captura de tela da Indecor">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://st3phano.github.io/wise-start-hdc-host/" target="_blank" rel="noopener noreferrer">
+              <img class="d-block w-100" src="img/screenshot/hdc-host.webp" alt="Captura de tela do hDC Host">
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a href="https://st3phano.github.io/wise-start-doceria/" target="_blank" rel="noopener noreferrer">
+              <img class="d-block w-100" src="img/screenshot/doceria.webp" alt="Captura de tela da Doceria">
+            </a>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProjects" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProjects" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
       </div>
     </section>
   </main>
