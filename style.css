@@ -1,17 +1,48 @@
+:root {
+  --linkedin-blue: rgb(10, 102, 194);
+  --linkedin-white: rgb(255, 255, 255);
+  --github-black: rgb(0, 0, 0);
+  --github-white: rgb(255, 255, 255);
+}
+
 .skill-logo {
   width: 96px;
+  max-height: 96px;
 }
 
 .certification-logo {
   width: 128px;
-}
-
-.carousel-item>a {
-  cursor: zoom-in;
+  max-height: 128px;
 }
 
 .carousel-control-prev,
 .carousel-control-next {
   filter: invert(0);
   mix-blend-mode: difference;
+}
+
+.contact {
+  transition-duration: 250ms;
+  border-radius: var(--bs-border-radius-xxl);
+  box-shadow: var(--bs-box-shadow-lg);
+}
+
+#contact-linkedin {
+  color: var(--linkedin-white);
+  background-color: var(--linkedin-blue);
+}
+
+#contact-linkedin:hover {
+  color: var(--linkedin-blue);
+  background-color: var(--linkedin-white);
+}
+
+#contact-github {
+  color: var(--github-white);
+  background-color: var(--github-black);
+}
+
+#contact-github:hover {
+  color: var(--github-black);
+  background-color: var(--github-white);
 }
