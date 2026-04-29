@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/profile.webp" type="image/webp">
   <title>Portfólio</title>
 
   <!-- Bootstrap -->
@@ -21,29 +22,43 @@
 </head>
 
 <body class="font-monospace">
-  <!-- SVG icons -->
-  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
-    <symbol id="box-arrow-up-right" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right"
-      viewBox="0 0 16 16">
-      <path fill-rule="evenodd"
-        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
-      <path fill-rule="evenodd"
-        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
-    </symbol>
-  </svg>
-
-  <header>
-    <nav class="nav justify-content-around nav-pills rounded-3 m-1 py-1 fs-5 shadow bg-body-secondary">
-      <a href="#" class="nav-link active" aria-current="page">Apresentação</a>
-      <a href="#" class="nav-link">Habilidades</a>
-      <a href="#" class="nav-link">Certificações</a>
-      <a href="#" class="nav-link">Projetos</a>
-      <a href="#" class="nav-link">Contato</a>
+  <header class="sticky-top">
+    <nav class="nav nav-fill fs-5 bg-body-secondary py-1 m-1 rounded-3 shadow">
+      <a class="nav-link section-name" href="#about">
+        <svg aria-hidden="true">
+          <use href="img/symbols.svg#person-circle"></use>
+        </svg>
+        <span class="d-none d-lg-inline">Sobre mim</span>
+      </a>
+      <a class="nav-link section-name" href="#skills">
+        <svg aria-hidden="true">
+          <use href="img/symbols.svg#tools"></use>
+        </svg>
+        <span class="d-none d-lg-inline">Tecnologias</span>
+      </a>
+      <a class="nav-link section-name" href="#certifications">
+        <svg aria-hidden="true">
+          <use href="img/symbols.svg#clipboard2-check-fill"></use>
+        </svg>
+        <span class="d-none d-lg-inline">Certificações</span>
+      </a>
+      <a class="nav-link section-name" href="#projects">
+        <svg aria-hidden="true">
+          <use href="img/symbols.svg#briefcase-fill"></use>
+        </svg>
+        <span class="d-none d-lg-inline">Projetos</span>
+      </a>
+      <a class="nav-link section-name" href="#contact">
+        <svg aria-hidden="true">
+          <use href="img/symbols.svg#chat-dots-fill"></use>
+        </svg>
+        <span class="d-none d-lg-inline">Contato</span>
+      </a>
     </nav>
   </header>
 
   <main>
-    <section class="container my-4 my-lg-5 py-4 p-lg-5 rounded-4 border shadow-lg bg-body-tertiary">
+    <section id="about" class="container my-4 my-lg-5 py-4 p-lg-5 rounded-4 border shadow-lg bg-body-tertiary">
       <div class="row row-cols-1 row-cols-lg-2 flex-lg-row-reverse align-items-center">
         <div class="col text-center">
           <img class="img-fluid rounded-circle shadow-lg" src="img/profile.webp" alt="Perfil">
@@ -60,8 +75,13 @@
       </div>
     </section>
 
-    <section class="container my-4 my-lg-5 text-center">
-      <h2 class="mb-4 pb-2 border-bottom">Habilidades</h2>
+    <section id="skills" class="container my-4 my-lg-5">
+      <h2 class="section-heading section-name">
+        <svg aria-hidden="true">
+          <use href="img/symbols.svg#tools"></use>
+        </svg>
+        Tecnologias
+      </h2>
       <div class="hstack flex-wrap justify-content-center column-gap-4 column-gap-lg-5">
         <figure class="figure">
           <img class="figure-img img-fluid skill-logo" src="img/logo/apache.svg" alt="Logo Apache">
@@ -126,8 +146,13 @@
       </div>
     </section>
 
-    <section class="container my-4 my-lg-5 text-center">
-      <h2 class="mb-4 pb-2 border-bottom">Certificações</h2>
+    <section id="certifications" class="container my-4 my-lg-5">
+      <h2 class="section-heading section-name">
+        <svg aria-hidden="true">
+          <use href="img/symbols.svg#clipboard2-check-fill"></use>
+        </svg>
+        Certificações
+      </h2>
       <div class="hstack flex-wrap justify-content-center column-gap-4 column-gap-lg-5">
         <figure class="figure position-relative">
           <img class="figure-img img-fluid certification-logo" src="img/logo/ewpt.svg" alt="Logo eWPT">
@@ -136,7 +161,7 @@
               target="_blank" rel="noopener noreferrer">
               eWPT
               <svg class="bi" aria-hidden="true">
-                <use href="#box-arrow-up-right"></use>
+                <use href="img/symbols.svg#box-arrow-up-right"></use>
               </svg>
             </a>
           </figcaption>
@@ -149,7 +174,7 @@
               rel="noopener noreferrer">
               TOEFL iBT
               <svg class="bi" aria-hidden="true">
-                <use href="#box-arrow-up-right"></use>
+                <use href="img/symbols.svg#box-arrow-up-right"></use>
               </svg>
             </a>
           </figcaption>
@@ -157,8 +182,13 @@
       </div>
     </section>
 
-    <section class="container my-4 my-lg-5 text-center">
-      <h2 class="mb-4 pb-2 border-bottom">Projetos</h2>
+    <section id="projects" class="container my-4 my-lg-5">
+      <h2 class="section-heading section-name">
+        <svg class="section-icon" aria-hidden="true">
+          <use href="img/symbols.svg#briefcase-fill"></use>
+        </svg>
+        Projetos
+      </h2>
       <div id="carouselProjects" class="carousel slide">
         <div class="carousel-inner rounded-4 shadow-lg">
           <div class="carousel-item active">
@@ -188,20 +218,25 @@
       </div>
     </section>
 
-    <section class="container my-4 my-lg-5 text-center">
-      <h2 class="mb-4 pb-2 border-bottom">Contato</h2>
+    <section id="contact" class="container my-4 my-lg-5">
+      <h2 class="section-heading section-name">
+        <svg class="section-icon" aria-hidden="true">
+          <use href="img/symbols.svg#chat-dots-fill"></use>
+        </svg>
+        Contato
+      </h2>
       <div class="hstack flex-wrap justify-content-center column-gap-4 column-gap-lg-5">
         <a href="https://www.linkedin.com/in/st3phano/" target="_blank" rel="noopener noreferrer">
           <div id="contact-linkedin" class="contact p-4 p-lg-5">
             <svg class="img-fluid">
-              <use href=" img/contact-symbols.svg#linkedin"></use>
+              <use href=" img/symbols.svg#linkedin"></use>
             </svg>
           </div>
         </a>
         <a href="https://github.com/st3phano" target="_blank" rel="noopener noreferrer">
           <div id="contact-github" class="contact p-4 p-lg-5">
             <svg class="img-fluid">
-              <use href="img/contact-symbols.svg#github"></use>
+              <use href="img/symbols.svg#github"></use>
             </svg>
           </div>
         </a>

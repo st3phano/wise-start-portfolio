@@ -5,14 +5,37 @@
   --github-white: rgb(255, 255, 255);
 }
 
+html {
+  scroll-padding-top: 62px;
+}
+
+.section-name {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.section-name svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.section-heading {
+  padding-bottom: 0.5rem;
+  border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+  margin-bottom: 1.5rem;
+}
+
 .skill-logo {
   width: 96px;
   max-height: 96px;
 }
 
 .certification-logo {
-  width: 128px;
-  max-height: 128px;
+  width: 144px;
+  max-height: 144px;
 }
 
 .carousel-control-prev,
