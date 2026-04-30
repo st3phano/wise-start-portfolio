@@ -9,33 +9,72 @@ html {
   scroll-padding-top: 62px;
 }
 
-.section-name {
+.section-title {
+  gap: 0.5rem;
+  /* hstack */
   display: flex;
+  flex-direction: row;
   align-items: center;
   align-self: stretch;
+  /* justify-content-center */
   justify-content: center;
-  gap: 0.5rem;
+
+  svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
 }
 
-.section-name svg {
-  width: 1.75rem;
-  height: 1.75rem;
-}
-
-.section-heading {
+.section-header {
+  /* pb-2 */
   padding-bottom: 0.5rem;
+  /* border-bottom */
   border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color);
+  /* mb-4 */
   margin-bottom: 1.5rem;
 }
 
-.skill-logo {
-  width: 96px;
-  max-height: 96px;
+.labeled-logo {
+  /* figure */
+  display: inline-block;
+
+  img {
+    /* figure-img */
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    /* img-fluid */
+    max-width: 100%;
+    height: auto;
+  }
+
+  figcaption {
+    /* text-break */
+    word-wrap: break-word;
+    word-break: break-word;
+  }
 }
 
-.certification-logo {
-  width: 144px;
-  max-height: 144px;
+#skills .labeled-logo {
+  img {
+    width: 96px;
+    max-height: 96px;
+  }
+
+  figcaption {
+    /* figure-caption */
+    font-size: 0.875em;
+    color: var(--bs-secondary-color);
+  }
+}
+
+#certifications .labeled-logo {
+  /* position-relative */
+  position: relative;
+
+  img {
+    width: 144px;
+    max-height: 144px;
+  }
 }
 
 .carousel-control-prev,
@@ -44,29 +83,36 @@ html {
   mix-blend-mode: difference;
 }
 
-.contact {
+.contact-card {
+  transition: color 250ms ease-in-out, background-color 250ms ease-in-out;
+  /* mb-4 */
   margin-bottom: 1.5rem;
-  transition-duration: 250ms;
+  /* rounded-5 */
   border-radius: var(--bs-border-radius-xxl);
+  /* shadow-lg */
   box-shadow: var(--bs-box-shadow-lg);
+
+  svg {
+    /* img-fluid */
+    max-width: 100%;
+    height: auto;
+  }
+
+  color: var(--contact-card-color);
+  background-color: var(--contact-card-bg-color);
+
+  &:hover {
+    color: var(--contact-card-bg-color);
+    background-color: var(--contact-card-color);
+  }
 }
 
-#contact-linkedin {
-  color: var(--linkedin-white);
-  background-color: var(--linkedin-blue);
+#linkedin {
+  --contact-card-color: var(--linkedin-white);
+  --contact-card-bg-color: var(--linkedin-blue);
 }
 
-#contact-linkedin:hover {
-  color: var(--linkedin-blue);
-  background-color: var(--linkedin-white);
-}
-
-#contact-github {
-  color: var(--github-white);
-  background-color: var(--github-black);
-}
-
-#contact-github:hover {
-  color: var(--github-black);
-  background-color: var(--github-white);
+#github {
+  --contact-card-color: var(--github-white);
+  --contact-card-bg-color: var(--github-black);
 }
