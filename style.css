@@ -1,4 +1,6 @@
 :root {
+  --carousel-icon-size: 48px;
+
   --linkedin-blue: rgb(10, 102, 194);
   --linkedin-white: rgb(255, 255, 255);
   --github-black: rgb(0, 0, 0);
@@ -77,10 +79,36 @@ html {
   }
 }
 
+.carousel-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  svg {
+    width: var(--carousel-icon-size);
+    height: var(--carousel-icon-size);
+  }
+
+  opacity: 0.5;
+  color: white;
+  mix-blend-mode: difference;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
 .carousel-control-prev,
 .carousel-control-next {
-  filter: invert(0);
+  filter: none;
   mix-blend-mode: difference;
+
+  span {
+    width: var(--carousel-icon-size);
+    height: var(--carousel-icon-size);
+  }
 }
 
 .contact-card {
