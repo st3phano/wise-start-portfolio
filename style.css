@@ -77,6 +77,11 @@ html {
   }
 }
 
+.carousel-indicators {
+  --bs-carousel-indicator-active-bg: gray;
+  mix-blend-mode: difference;
+}
+
 .carousel-control-prev,
 .carousel-control-next {
   filter: none;
