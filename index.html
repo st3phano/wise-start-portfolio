@@ -1,7 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR" data-bs-theme="light">
+<html lang="pt-BR">
 
 <head>
+  <script>
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    function applyColorScheme() {
+      document.documentElement.setAttribute("data-bs-theme", prefersDarkScheme.matches ? "dark" : "light");
+    }
+    applyColorScheme();
+    prefersDarkScheme.addEventListener("change", applyColorScheme);
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
@@ -18,7 +27,7 @@
   <link rel="stylesheet" href="style.css">
 
   <!-- JavaScript -->
-  <script defer src="script.js"></script>
+  <script defer src="carousel.js"></script>
 </head>
 
 <body class="font-monospace">
