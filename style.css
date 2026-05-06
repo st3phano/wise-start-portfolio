@@ -68,9 +68,6 @@ html {
 }
 
 #certifications .labeled-logo {
-  /* position-relative */
-  position: relative;
-
   img {
     width: 144px;
     max-height: 144px;
